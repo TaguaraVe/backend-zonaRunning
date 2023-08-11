@@ -1,8 +1,9 @@
-import express, { Request, Response } from "express"
-import helmet from "helmet"
+// import express, { Request, Response } from "express"
+import express from "express"
+// import helmet from "helmet"
 import cors from "cors"
-import globalRouter from "./routes"
-import errorHandler from "./utils/errorHandler"
+// import globalRouter from "./routes"
+// import errorHandler from "./utils/errorHandler"
 import path from "path"
 
 //esta es nuestra aplicacion
@@ -10,14 +11,14 @@ const app = express()
 
 //middlewares
 app.use(express.json())
-app.use(
-  helmet({
-    crossOriginEmbedderPolicy: false,
-  })
-)
+// app.use(
+//   helmet({
+//     crossOriginEmbedderPolicy: false,
+//   })
+// )
 app.use(cors())
 app.use(express.static(path.join(__dirname, "public")))
-app.use("/api/v1", globalRouter)
+// app.use("/api/v1", globalRouter)
 // app.get("/", async(req:Request, res:Response) => {
 //     const {
 //         code
@@ -26,6 +27,6 @@ app.use("/api/v1", globalRouter)
 // })
 
 //Middlewares despues de las rutas
-app.use(errorHandler)
+// app.use(errorHandler)
 
 export default app
