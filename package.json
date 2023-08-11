@@ -6,7 +6,6 @@
     "scripts": {
         "dev": "ts-node-dev src/server.ts",
         "start": "node src/server.js",
-        "server": "ts-node ./src/server.ts",
         "tsc": "tsc",
         "test": "echo \"Error: no test espified\" && exit 1"
     },
