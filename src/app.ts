@@ -2,7 +2,7 @@
 import express from "express"
 // import helmet from "helmet"
 import cors from "cors"
-import globalRouter from "./routes"
+// import globalRouter from "./routes"
 // import errorHandler from "./utils/errorHandler"
 import path from "path"
 
@@ -18,7 +18,7 @@ app.use(express.json())
 // )
 app.use(cors())
 app.use(express.static(path.join(__dirname, "public")))
-app.use("/api/v1", globalRouter)
+// app.use("/api/v1", globalRouter)
 // app.get("/", async(req:Request, res:Response) => {
 //     const {
 //         code
