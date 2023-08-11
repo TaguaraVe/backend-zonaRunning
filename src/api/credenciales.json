@@ -1,0 +1,11 @@
+{
+  "installed": {
+    "client_id": "27810905617-1lu6dgqv1g3ur338dp1mbvm8i88ppqbn.apps.googleusercontent.com",
+    "project_id": "zonarunning-394400",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": ["http://localhost:3000"]
+  }
+}
